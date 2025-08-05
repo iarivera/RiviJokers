@@ -17,7 +17,7 @@ SMODS.Joker {
     calculate = function(self, card, context)
         if context.end_of_round and not context.blueprint and G.GAME.chips / G.GAME.blind.chips <= 1.05 then
             return { 
-                    message = 'Bank Shot!',
+                    message = 'Bankshot',
                     dollars = card.ability.extra.dollars 
             }
         end

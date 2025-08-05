@@ -1,4 +1,4 @@
-
+--Trigger Happy (Uncommon) 1 in 6 chance to retrigger scored card twice
 SMODS.Joker {
     key = "triggerhappy",
     atlas = 'Rivi',
@@ -15,7 +15,7 @@ SMODS.Joker {
         -- local whoami = context.blueprint_card or card
         if context.cardarea == G.play and context.repetition and not context.repetition_only then
             return {
-                message = localize('k_again_ex'),
+                message = localize('k_bang_ex'),
                 repetitions = card.ability.extra.repetitions,
                 --card = card,
             }

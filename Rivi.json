@@ -1,0 +1,15 @@
+{
+    "id": "Rivi",
+    "name": "Rivi's Jokers",
+    "display_name": "Rivi's Jokers",
+    "author": ["iarivera"],
+    "description": "A few vanilla-like jokers.",
+    "prefix": "riv",
+    "main_file": "Rivi.lua",
+    "priority": 0,
+    "badge_colour": "07EB96",
+    "version": "0.1.0",
+    "dependencies": [
+                "Steamodded (>=1.0.0~BETA-0626b)"
+        ]
+}

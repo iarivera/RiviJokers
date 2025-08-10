@@ -12,9 +12,9 @@ return {
             j_riv_triggerhappy = {
                 name = "Trigger Happy",
                 text = {
-                    "{C:green}#1# in #2#{} chance",
+                    "{C:green}#2# in #3#{} chance",
                     "to retrigger {C:attention}scored{}",
-                    "cards {C:attention}#3#{} times"
+                    "cards {C:attention}#1#{} times"
                 }
             }
         }

@@ -16,7 +16,8 @@ SMODS.Joker {
         return { vars = { card.ability.extra.repetitions, numerator, denominator } }
     end,
     calculate = function(self, card, context)
-        -- local whoami = context.blueprint_card or card
+        -- psuedorandmon_probability is a NIL value, could it be because the probability isn't being checked?
+        --
         if context.cardarea == G.play and context.repetition and not context.repetition_only and SMODS.psuedorandom_probability(card, 'riv_triggerhappy', 1) then
             return {
                 repetitions = card.ability.extra.repetitions,

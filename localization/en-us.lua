@@ -16,6 +16,19 @@ return {
                     "to retrigger {C:attention}scored{}",
                     "cards {C:attention}#1#{} times"
                 }
+            },
+            j_riv_weirdjal = {
+                name = "Weird Jal",
+                text = {
+                    "Scored wild cards give",
+                    "{C:red}+#1#{} Mult"
+                }
+            },
+            j_riv_criticalhit = {
+                name = "Critical Hit",
+                text = {
+                    "{C:red}+#1#{} Mult"
+                }
             }
         }
     }

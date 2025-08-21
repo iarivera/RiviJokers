@@ -1,6 +1,6 @@
 # Rivi's Jokers
 
-A Balatro content mod that adds new Jokers
+A Balatro content mod that adds new vanilla-esque Jokers (WIP)
 
 ## Installation
 

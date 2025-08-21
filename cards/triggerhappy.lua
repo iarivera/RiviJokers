@@ -16,13 +16,11 @@ SMODS.Joker {
         return { vars = { card.ability.extra.repetitions, numerator, denominator } }
     end,
     calculate = function(self, card, context)
-        -- psuedorandmon_probability is a NIL value, could it be because the probability isn't being checked?
-        --
-        if context.cardarea == G.play and context.repetition and not context.repetition_only and SMODS.psuedorandom_probability(card, 'riv_triggerhappy', 1) then
+        if context.cardarea == G.play and context.repetition and not context.repetition_only and SMODS.pseudorandom_probability(card, 'riv_triggerhappy', 1, card.ability.extra.odds) then
             return {
                 repetitions = card.ability.extra.repetitions,
-                --card = card,
-                message = localize('k_bang_ex'),
+                -- currently returns ERROR as text
+                message = localize('k_riv_triggerhappy_trigger')
             }
         end
     end

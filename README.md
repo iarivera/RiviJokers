@@ -15,4 +15,4 @@ Requires Steammodded  (1.0.0~BETA-0626b or later) [link here](https://github.com
 ## Suggestions/Reporting Bugs
 
 Open an issue and specify whether it's a suggestion or bug report. 
-I can't guarantee I'll fix it immediately because I am working full time and this is currently something I can only work on during what my free time.
+I can't guarantee I'll fix it immediately because I am working full time and this is currently something I can only work on during my free time.

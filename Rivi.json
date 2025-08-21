@@ -3,12 +3,12 @@
     "name": "Rivi's Jokers",
     "display_name": "Rivi's Jokers",
     "author": ["iarivera"],
-    "description": "A few vanilla-like jokers.",
+    "description": "A content mod with vanilla-esque jokers.",
     "prefix": "riv",
     "main_file": "Rivi.lua",
     "priority": 0,
     "badge_colour": "07EB96",
-    "version": "0.1.0",
+    "version": "0.2.0a",
     "dependencies": [
                 "Steamodded (>=1.0.0~BETA-0626b)"
         ]

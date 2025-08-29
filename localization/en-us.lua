@@ -1,12 +1,12 @@
 return {
     descriptions = {
         Joker = {
-            j_riv_bankshot = {
-                name = "Bankshot",
+            j_riv_surplusval = {
+                name = "Surplus Value",
                 text = {
                     "Get {C:money}$#1#{} at end of round",
-                    "if final score is, at most,",
-                    "{C:attention}105% of required score"
+                    "if final score is, at least,",
+                    "{C:attention}200% of required score"
                 },
             },
             j_riv_triggerhappy = {
@@ -39,6 +39,15 @@ return {
                     "if played hand contains",
                     "a {C:attention}#2#",
                     "{C:inactive}(Currently {C:chips}+#3#{C:inactive} Chips)"
+                }
+            },
+            j_riv_hoarder = {
+                name = "Hoarder",
+                text = {
+                    "At end of shop",
+                    "gain {X:mult,C:white} X#2# {} Mult",
+                    "if consumable slots are full",
+                    "{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)"
                 }
             }
         }

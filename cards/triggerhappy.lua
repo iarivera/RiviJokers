@@ -19,7 +19,6 @@ SMODS.Joker {
         if context.cardarea == G.play and context.repetition and not context.repetition_only and SMODS.pseudorandom_probability(card, 'riv_triggerhappy', 1, card.ability.extra.odds) then
             return {
                 repetitions = card.ability.extra.repetitions,
-                -- currently returns ERROR as text
                 message = localize('k_riv_triggerhappy_trigger')
             }
         end

@@ -49,6 +49,14 @@ return {
                     "if consumable slots are full",
                     "{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)"
                 }
+            },
+            j_riv_food = {
+                name = "Food",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mult",
+                    "{X:mult,C:white} -#2# {} Mult per",
+                    "round played"
+                }
             }
         }
     },

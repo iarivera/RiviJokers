@@ -1,4 +1,3 @@
--- Figure out how to make scaling work, currently doesn't scale
 SMODS.Joker {
     key = "hoarder",
     atlas = 'Rivi',
@@ -10,7 +9,7 @@ SMODS.Joker {
     rarity = 3,
     cost = 7,
     pos = { x = 0, y = 1 },
-    config = { extra = { Xmult = 1, Xmult_mod = 0.25 } },
+    config = { extra = { Xmult = 1, Xmult_mod = 0.2 } },
     loc_vars = function(self, info_queue, card) 
         return { vars = { card.ability.extra.Xmult, card.ability.extra.Xmult_mod } }
     end,

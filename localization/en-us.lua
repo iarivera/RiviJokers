@@ -4,7 +4,7 @@ return {
             j_riv_surplusval = {
                 name = "Surplus Value",
                 text = {
-                    "Get {C:money}$#1#{} at end of round",
+                    "Earn {C:money}$#1#{} at end of round",
                     "if final score is, at least,",
                     "{C:attention}200% of required score"
                 },
@@ -57,13 +57,28 @@ return {
                     "{X:mult,C:white} -#2# {} Mult per",
                     "round played"
                 }
+            },
+            j_riv_cashback = {
+                name = "Cashback Card",
+                text = {
+                    "Earn {C:money}$#3#{} for",
+                    "every {C:attention}$#1#{} {C:inactive}($#2#){} spent in shop"
+                }
+            },
+            j_riv_potentialman = {
+                name = "Potential Man",
+                text = {
+                    "{C:green}#2# in #3#{} chance for",
+                    "{X:mult,C:white} X#1# {} Mult"
+                }
             }
         }
     },
         misc = {
             dictionary = {
                 k_riv_triggerhappy_trigger = "Pew!",
-                k_riv_criticalhit_trigger = "SMAAAASH!!"
+                k_riv_criticalhit_trigger = "SMAAAASH!!",
+                k_riv_potentialfail_ex = "LOL"
             }
         }
 }

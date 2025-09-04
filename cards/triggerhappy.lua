@@ -8,7 +8,7 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     rarity = 3,
-    cost = 6,
+    cost = 7,
     pos = { x = 0, y = 0 },
     config = { extra = { odds = 6, repetitions = 2 }},
     loc_vars = function(self, info_queue, card)

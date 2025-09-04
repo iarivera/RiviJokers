@@ -8,15 +8,19 @@ SMODS.Joker {
     rarity = 1,
     cost = 2,
     pos = { x = 2, y = 1 },
-    config = { extra = { money_req = 10, money_count = 0, dollars = 1 } },
+    config = { extra = { money_req = 10, money_count = 0, dollars = 1, moeny_req_increase = 0 } },
     loc_vars = function(self, info_queue, card)
-        return { vars = { card.ability.extra.money_req, card.ability.extra.money_count, card.ability.extra.money } }
+        -- money_count is not incrementing
+        return { vars = { card.ability.extra.money_req, card.ability.extra.money_count, card.ability.extra.dollars } }
     end,
     calculate = function(self, card, context)
-        if context.cry_ease_dollars and to_big(context.cry_ease_dollars) < to_big(0) and not context.blueprint then
-            card.ability.extra.money_count = to_big(card.ability.extra.money_count) - to_big(context.ease_dollars)
-            if to_big(card.ability.extra.money_count) >= to_big(card.ability.extra.money_req) then
-                while to_big(card.ability.extra.money_count) >= to_big(card.ability.extra.money_req) do
+        if context.riv_easedollars and context.riv_easedollars < 0 and not context.blueprint then
+            
+            card.ability.extra.money_count = card.ability.extra.money_count - context.riv_easedollars
+            
+            if card.ability.extra.money_count >= card.ability.extra.money_req then
+
+                while card.ability.extra.money_count >= card.ability.extra.money_req do
                     card.ability.extra.money_count = card.ability.extra.money_count - card.ability.extra.money_req
                 end
                 return {
@@ -29,9 +33,7 @@ SMODS.Joker {
         local ed = ease_dollars
         function ease_dollars(mod, x)
             ed(mod, x)
-            for i = 1, #G.jokers.cards do
-                local effects = G.jokers.cards[i]:calculate_joker( { cry_ease_dollars = mod } )
-            end
+            SMODS.calculate_context({riv_easedollars = mod}, effects)
         end
     end,
 }

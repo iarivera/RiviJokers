@@ -18,7 +18,7 @@ return {
                 }
             },
             j_riv_weirdjal = {
-                name = "Weird Jal",
+                name = "Weird Al Jokervic",
                 text = {
                     "Scored wild cards give",
                     "{C:red}+#1#{} Mult"
@@ -71,13 +71,21 @@ return {
                     "{C:green}#2# in #3#{} chance for",
                     "{X:mult,C:white} X#1# {} Mult"
                 }
+            },
+            j_riv_consolation = {
+                name = "Consolation Prize",
+                text = {
+                    "Gain {C:mult}+#2#{} Mult",
+                    "when Lucky Card {C:attention}doesn't trigger",
+                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)"
+                }
             }
         }
     },
         misc = {
             dictionary = {
                 k_riv_triggerhappy_trigger = "Pew!",
-                k_riv_criticalhit_trigger = "SMAAAASH!!",
+                k_riv_steel = "Forged!",
                 k_riv_potentialfail_ex = "LOL"
             }
         }

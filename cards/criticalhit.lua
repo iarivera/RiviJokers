@@ -20,6 +20,7 @@ SMODS.Joker {
             if SMODS.pseudorandom_probability(card, 'riv_critcalhit', 1, card.ability.extra.odds) then
                 return {
                     message = localize('k_riv_criticalhit_trigger'),
+                    -- consider adding a random slider to make the mult either be between 9 and 11
                     mult = card.ability.extra.mult * 10
                 }
             end

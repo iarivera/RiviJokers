@@ -13,6 +13,7 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.mult } }
     end,
+    -- add check to make sure at least one wild card is in deck before joker appears
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play then
             if context.other_card.ability.name == 'Wild Card' then
@@ -21,5 +22,13 @@ SMODS.Joker {
                 }
             end
         end
+    end,
+    in_pool = function(self, args)
+        for _, playing_card in ipairs(G.playing_cards or {}) do
+            if SMODS.has_enhancement(playing_card, 'm_wild') then
+                return true
+            end
+        end
+        return false
     end
 }

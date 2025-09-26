@@ -80,6 +80,12 @@ return {
                     "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)"
                 }
             }
+            j_riv_blacksmith = {
+                name = "Blacksmith",
+                text = {
+                    "DUMMY"
+                }
+            }
         }
     },
         misc = {

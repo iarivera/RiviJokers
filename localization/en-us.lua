@@ -87,6 +87,30 @@ return {
                     "add a random {C:attention}Steel Card",
                     "to your hand"
                 }
+            },
+            j_riv_glassworker = {
+                name = "Glass Worker",
+                text = {
+                    "When round begins,",
+                    "add a random {C:attention}Steel Card",
+                    "to your hand"
+                }
+            },
+            j_riv_lottomachine = {
+                name = "Lotto Machine",
+                text = {
+                    "When round begins,",
+                    "add a random {C:attention}Lucky Card",
+                    "to your hand"
+                }
+            },
+            j_riv_goldmint = {
+                name = "Gold Mint",
+                text = {
+                    "When round begins,",
+                    "add a random {C:attention}Gold Card",
+                    "to your hand"
+                }
             }
         }
     },

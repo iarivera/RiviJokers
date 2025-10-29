@@ -7,7 +7,7 @@ SMODS.Joker {
     perishable_compat = false,
     rarity = 2,
     cost = 5,
-    pos = { x = 4, y = 0 },
+    pos = { x = 4, y = 2 },
     config = { extra = { chip_mod = 8, chips = 0 } },
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.chip_mod, localize('Pair', 'poker_hands'), card.ability.extra.chips } }

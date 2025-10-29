@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = "food",
+    key = "burger",
     atlas = 'Rivi',
     unlocked = true,
     discovered = true,
@@ -8,7 +8,7 @@ SMODS.Joker {
     perishable_compat = true,
     rarity = 1,
     cost = 5,
-    pos = { x = 1, y = 1 },
+    pos = { x = 0, y = 0 },
     config = { extra = { Xmult = 3, Xmult_loss = 0.40 } },
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.Xmult, card.ability.extra.Xmult_loss } }

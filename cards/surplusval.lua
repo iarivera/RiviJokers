@@ -9,7 +9,7 @@ SMODS.Joker {
     perishable_compat = true,
     rarity = 2,
     cost = 7,
-    pos = { x = 1, y = 0 },
+    pos = { x = 4, y = 1 },
     config = { extra = { dollars = 5 }},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.dollars } }

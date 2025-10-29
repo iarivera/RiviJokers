@@ -8,7 +8,7 @@ SMODS.Joker {
     perishable_compat = true,
     rarity = 2,
     cost = 6,
-    pos = { x = 3, y = 0 },
+    pos = { x = 4, y = 0 },
     -- odds 100, for 1 in 100 chance to give much higher flat mult value
     config = { extra = { odds = 100, mult = 20 } },
     loc_vars = function(self, info_queue, card)

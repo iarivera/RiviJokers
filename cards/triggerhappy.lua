@@ -9,7 +9,7 @@ SMODS.Joker {
     perishable_compat = true,
     rarity = 3,
     cost = 7,
-    pos = { x = 0, y = 0 },
+    pos = { x = 3, y = 2 },
     config = { extra = { odds = 6, repetitions = 2 }},
     loc_vars = function(self, info_queue, card)
         local numerator, denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'riv_triggerhappy')

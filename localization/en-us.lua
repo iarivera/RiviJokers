@@ -50,8 +50,8 @@ return {
                     "{C:inactive}(Currently {X:mult,C:white}X#1#{C:inactive} Mult)"
                 }
             },
-            j_riv_food = {
-                name = "Food",
+            j_riv_burger = {
+                name = "Hamburger",
                 text = {
                     "{X:mult,C:white} X#1# {} Mult",
                     "{X:mult,C:white} -#2# {} Mult per",
@@ -92,7 +92,7 @@ return {
                 name = "Glass Worker",
                 text = {
                     "When round begins,",
-                    "add a random {C:attention}Steel Card",
+                    "add a random {C:attention}Glass Card",
                     "to your hand"
                 }
             },
@@ -111,14 +111,23 @@ return {
                     "add a random {C:attention}Gold Card",
                     "to your hand"
                 }
+            },
+            j_riv_vendingmachine = {
+                name = "Vending Machine",
+                text = {
+                    "For the next {C:attention}#2#{} rounds,",
+                    "create a {C:attention}Diet Cola",
+                    "{C:inactive}(Must have room)"
+                }
             }
         }
     },
         misc = {
             dictionary = {
                 k_riv_triggerhappy_trigger = "Pew!",
-                k_riv_steel = "Forged!",
-                k_riv_potentialfail_ex = "LOL"
+                --k_riv_steel = "Forged!",
+                k_riv_potentialfail_ex = "LOL",
+                k_riv_vending_ex = "OUT OF STOCK!"
             }
         }
 }

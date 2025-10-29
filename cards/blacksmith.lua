@@ -9,9 +9,9 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    rarity = 3,
-    cost = 7,
-    pos = { x = 4, y = 1 },
+    rarity = 2,
+    cost = 6,
+    pos = { x = 0, y = 1 },
     -- Game Crashes
     calculate = function(self, card, context)
         if context.first_hand_drawn then

@@ -8,9 +8,9 @@ SMODS.Joker {
     perishable_compat = false,
     rarity = 1,
     cost = 5,
-    pos = { x = 3, y = 1 },
-    -- To Do:
-    -- Implement Logic for scaling, check for any failed chance events
+    pos = { x = 3, y = 0 },
+    -- Scaling happens in all case, need to check that it is played lucky card
+    -- Look at Lucky Cat
     config = { extra = { mult_mod = 1, mult = 0 } },
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.mult, card.ability.extra.mult_mod } }

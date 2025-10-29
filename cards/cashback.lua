@@ -7,7 +7,7 @@ SMODS.Joker {
     eternal_compat = true,
     rarity = 1,
     cost = 2,
-    pos = { x = 2, y = 1 },
+    pos = { x = 1, y = 0 },
     config = { extra = { money_req = 10, money_count = 0, dollars = 1, moeny_req_increase = 0 } },
     loc_vars = function(self, info_queue, card)
         -- money_count is not incrementing
